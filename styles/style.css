@@ -1,132 +1,175 @@
+/* Importa as fontes do Google Fonts para usar no site */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+/* :root é o lugar onde definimos variáveis globais
+   Essas variáveis podem ser usadas em qualquer lugar do CSS */
 :root {
-    --cor-primaria: #000000;
-    --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #22D4FD;
-    --cor-hover: #272727;
+    --cor-primaria: #181818;      /* Cor de fundo principal do site */
+    --cor-secundaria: #e0e0e0;    /* Cor principal dos textos */
+    --cor-terciaria: #29b6f6;     /* Cor de destaque (links, botões, hover) */
+    --cor-hover: #222222;         /* Cor usada em efeitos de hover */
 
-    --fonte-primaria: 'Krona One', sans-serif;
-    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-primaria: 'Krona One', sans-serif;   /* Fonte para títulos */
+    --fonte-secundaria: 'Montserrat', sans-serif; /* Fonte para textos */
 }
 
-*{
+/* Reset básico:
+   Remove margens e espaçamentos padrão do navegador
+   box-sizing garante que padding e border não aumentem o tamanho dos elementos */
+* {
     margin: 0;
     padding: 0;
-}
-
-body{
-    /* height: 100vh; */
     box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
 }
 
-.cabecalho{
-    padding: 2% 0% 0% 15%;
+/* Estilo geral do corpo da página */
+body {
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+    background-color: var(--cor-primaria); /* Fundo escuro */
+    color: var(--cor-secundaria); /* Cor padrão dos textos */
+    font-family: var(--fonte-secundaria); /* Fonte padrão do site */
 }
 
-.cabecalho__menu{
-    display: flex;
-    gap: 80px;
+/* ================= HEADER ================= */
+
+/* Estilo do cabeçalho */
+.cabecalho {
+    padding: 20px; /* Espaço interno ao redor do conteúdo do header */
 }
 
-.cabecalho__menu__link{
-    font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--cor-secundaria);
-    text-decoration: none;
+/* Menu de navegação */
+.cabecalho__menu {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza os links horizontalmente */
+    gap: 60px; /* Espaço entre os links */
 }
 
-.apresentacao{
-    padding: 5% 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 82px;
+/* Estilo dos links do menu */
+.cabecalho__menu__link {
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte (negrito moderado) */
+    color: var(--cor-secundaria); /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado do link */
 }
 
-.apresentacao__conteudo{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+/* Efeito quando o mouse passa sobre o link */
+.cabecalho__menu__link:hover {
+    color: var(--cor-terciaria); /* Muda a cor para azul */
 }
 
-.apresentacao__conteudo__titulo{
-    font-size: 2.25rem;
-    font-family: var(--fonte-primaria);
+/* ================= MAIN ================= */
+
+/* Área principal do site */
+.apresentacao {
+    padding: 5% 10%; /* Espaçamento interno (vertical / horizontal) */
+    display: flex; /* Flexbox para alinhar conteúdo e imagem */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaça conteúdo e imagem */
+    gap: 60px; /* Espaço entre os blocos */
 }
 
-.titulo-destaque{
-    color: var(--cor-terciaria);
+/* Conteúdo textual */
+.apresentacao__conteudo {
+    width: 55%; /* Ocupa 55% da largura do container */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    gap: 32px; /* Espaço entre título, texto e links */
 }
 
-.apresentacao__conteudo__texto{
-    font-size: 1.5rem;
-    font-family: var(--fonte-secundaria);
+/* Título principal */
+.apresentacao__conteudo__titulo {
+    font-family: var(--fonte-primaria); /* Fonte de destaque */
+    font-size: 2.2rem; /* Tamanho grande */
 }
 
-.apresentacao__links{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
+/* Texto principal */
+.apresentacao__conteudo__texto {
+    font-size: 1.2rem; /* Tamanho confortável para leitura */
+    line-height: 1.6; /* Espaçamento entre linhas (melhora leitura) */
 }
 
-.apresentacao__links__subtitulo{
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 1.5rem;
+/* ================= LINKS ================= */
+
+/* Container dos botões/links */
+.apresentacao__links {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Botões em coluna */
+    gap: 16px; /* Espaço entre os botões */
+    margin-top: 20px; /* Espaço acima do bloco */
 }
 
-.apresentacao__links__navegacao{
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    border: 2px solid var(--cor-terciaria);
-    width: 50%;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 21.5px 0;
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-secundaria);
-}
-.apresentacao__links__link:hover{
-    background-color: var(--cor-hover);
+/* Subtítulo da seção de links */
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria); /* Fonte de título */
+    font-size: 1.3rem; /* Tamanho do texto */
 }
 
-    .apresentacao__imagem{
-        width: 50%;
-    }
-
-.rodape{
-    color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
-    padding: 24px;
-    text-align: center;
-    font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
-    font-weight: 400;
+/* Estilo dos botões de navegação */
+.apresentacao__links__navegacao {
+    border: 2px solid var(--cor-terciaria); /* Borda azul */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 14px; /* Espaço interno do botão */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 1.1rem; /* Tamanho do texto */
+    font-weight: 600; /* Peso da fonte */
+    color: var(--cor-secundaria); /* Cor do texto */
+    transition: 0.3s; /* Animação suave no hover */
 }
 
-@media (max-width: 1200px) {
-    .cabecalho {
-        padding: 10%;
-    }
-    .cabecalho__menu {
-        justify-content: center;
-    }
+/* Efeito hover dos botões */
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-terciaria); /* Fundo azul */
+    color: var(--cor-primaria); /* Texto escuro */
+}
+
+/* ================= IMAGE ================= */
+
+/* Imagem de perfil */
+.apresentacao__imagem {
+    width: 35%; /* Largura relativa */
+    max-width: 300px; /* Limite máximo */
+    border-radius: 50%; /* Deixa a imagem redonda */
+}
+
+/* ================= FOOTER ================= */
+
+/* Rodapé do site */
+.rodape {
+    margin-top: 80px; /* Espaço acima do rodapé */
+    background-color: var(--cor-terciaria); /* Fundo azul */
+    color: var(--cor-primaria); /* Texto escuro */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 15px; /* Espaço interno */
+    font-size: 1rem; /* Tamanho padrão */
+}
+
+/* Links dentro do rodapé */
+.rodape a {
+    color: var(--cor-primaria); /* Cor do link */
+    font-weight: 600; /* Deixa mais forte */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* ================= RESPONSIVO ================= */
+
+/* Regras para telas menores que 900px (celular/tablet) */
+@media (max-width: 900px) {
+
+    /* Empilha imagem e texto */
     .apresentacao {
-        flex-direction: column-reverse;
-        padding: 5%;
+        flex-direction: column-reverse; /* Imagem em cima, texto embaixo */
+        text-align: center; /* Centraliza textos */
+        padding: 5%; /* Menos espaçamento */
     }
+
+    /* Conteúdo ocupa 100% da largura */
     .apresentacao__conteudo {
-        width: auto;
+        width: 100%;
+    }
+
+    /* Imagem maior no mobile */
+    .apresentacao__imagem {
+        width: 60%;
     }
 }
