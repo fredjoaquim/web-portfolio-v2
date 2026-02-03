@@ -132,26 +132,26 @@ body {
     border-radius: 50%; /* Deixa a imagem redonda */
 }
 
-/* ================= FOOTER ================= */
-
-/* Rodapé do site */
-.rodape {
-    margin-top: 80px; /* Espaço acima do rodapé */
-    background-color: var(--cor-terciaria); /* Fundo azul */
-    color: var(--cor-primaria); /* Texto escuro */
-    text-align: center; /* Centraliza o conteúdo */
-    padding: 15px; /* Espaço interno */
-    font-size: 1rem; /* Tamanho padrão */
+.footer-minimal {
+  width: 100%;
+  padding: 20px 0;
+  background: transparent; /* sem cor por padrão */
 }
 
-/* Links dentro do rodapé */
-.rodape a {
-    color: var(--cor-primaria); /* Cor do link */
-    font-weight: 600; /* Deixa mais forte */
-    text-decoration: none; /* Remove sublinhado */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 18px;  /* ← pode ajustar */
+  color: var(--cor-secundaria);      /* ← pode ajustar a cor */
 }
 
-/* ================= RESPONSIVO ================= */
+.footer-logo {
+  width: 200px;     /* ← pode ajustar o tamanho */
+  height: auto;
+}
 
 /* Regras para telas menores que 900px (celular/tablet) */
 @media (max-width: 900px) {
