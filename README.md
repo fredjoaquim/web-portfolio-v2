@@ -17,4 +17,4 @@ Versão aprimorada do portfólio com melhorias visuais, estruturais e de experi�
 - Responsividade aprimorada
 
 ## 📷 Preview
-![Preview](./assets/preview.png)
+![Preview](./assets/Preview.png)
