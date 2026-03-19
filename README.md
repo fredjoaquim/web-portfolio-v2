@@ -1,27 +1,20 @@
-# 💼 Portfólio 2 — Fred Joaquim dos Santos
+# Portfolio v2
 
-Versão aprimorada do meu portfólio pessoal, com melhorias de design, layout e apresentação de projetos.
+## 🚀 Live Demo
+[🔗 Acessar Projeto](https://fredjoaquim.github.io/web-portfolio-v2/)
 
-## 🚀 Demonstração
-🔗 [Acesse o portfólio](https://fredjoaquim.github.io/Portfolio-2-Fred-Joaquim-dos-Santos/)
+## 📌 Sobre
+Versão aprimorada do portfólio com melhorias visuais, estruturais e de experiência do usuário.
 
-## 🧠 Funcionalidades
-- Apresentação visual refinada  
-- Seção de projetos integrada  
-- Links de contato e redes sociais  
+## 🛠️ Tecnologias
+- HTML5
+- CSS3
+- JavaScript
 
-## 🛠️ Tecnologias utilizadas
-- HTML5  
-- CSS3  
-- JavaScript  
+## 🎯 Melhorias
+- Design mais moderno
+- Melhor organização
+- Responsividade aprimorada
 
-## 👨‍💻 Autor
-**Fred Joaquim dos Santos**  
-📧 [fredjoaquimprogramador@gmail.com](mailto:fredjoaquimprogramador@gmail.com)  
-🐙 [GitHub](https://github.com/fredjoaquim)  
-💼 [LinkedIn](https://linkedin.com/in/fredjoaquim)
-
----
-
-## 📝 Licença
-Uso livre para fins educacionais.
+## 📷 Preview
+![Preview](./assets/preview.png)
