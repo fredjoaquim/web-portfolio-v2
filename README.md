@@ -15,6 +15,3 @@ Versão aprimorada do portfólio com melhorias visuais, estruturais e de experi�
 - Design mais moderno
 - Melhor organização
 - Responsividade aprimorada
-
-## 📷 Preview
-![Preview](./assets/Preview.png)
